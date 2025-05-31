@@ -13,7 +13,7 @@ def readFile(fileName):
     return start, end
 
 
-def main():
+def partOne():
     start, end = readFile("D:\Paul\Coding Stuff\Python\Advent of Code 2024\day 1-input.txt")
     start.sort()
     end.sort()
@@ -23,5 +23,22 @@ def main():
         distance += abs(start[i] - end[i])
     print(distance)
 
+def partTwo():
+    left, right = readFile("D:\Paul\Coding Stuff\Python\Advent of Code 2024\day 1-input.txt")
+    count = {}
+    similarityScore = 0
+    for num in right:
+        if num in count:
+            count[num] += 1
+        else: 
+            count[num] = 1
+    
+    for num in left:
+        if num in count:
+            similarityScore += count[num] * num
+    print(similarityScore)
+    
+
 if __name__ == "__main__":
-    main()
+    partOne()
+    partTwo()
