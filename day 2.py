@@ -25,7 +25,7 @@ def is_valid_with_removal(levels):
     return False
 
 def partTwo():
-    data = readFile("D:\Paul\Coding Stuff\Python\Advent of Code 2024\day 2-input.txt")
+    data = readFile("D:\Paul\Coding Stuff\Python\Advent of Code 2024\data\day 2-input.txt")
     safe_count = 0
     for levels in data:
         if is_valid(levels) or is_valid_with_removal(levels):
@@ -33,7 +33,7 @@ def partTwo():
     print(safe_count)
 
 def partOne():
-    data = readFile("D:\Paul\Coding Stuff\Python\Advent of Code 2024\day 2-input.txt")
+    data = readFile("D:\Paul\Coding Stuff\Python\Advent of Code 2024\data\day 2-input.txt")
     safe_count = 0
     for levels in data:
         if is_valid(levels):

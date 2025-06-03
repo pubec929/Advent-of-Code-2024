@@ -24,7 +24,7 @@ def partOne():
     print(distance)
 
 def partTwo():
-    left, right = readFile("D:\Paul\Coding Stuff\Python\Advent of Code 2024\day 1-input.txt")
+    left, right = readFile("D:\Paul\Coding Stuff\Python\Advent of Code 2024\data\day 1-input.txt")
     count = {}
     similarityScore = 0
     for num in right:
